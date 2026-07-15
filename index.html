@@ -5,6 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bishnu Hari Tripathi - Portfolio</title>
+    
+    <!-- SEO & Social Media Meta Tags -->
+    <meta name="description" content="Portfolio of Bishnu Hari Tripathi, Treasurer of the Nepal Basketball Association.">
+    <meta property="og:title" content="Bishnu Hari Tripathi - Portfolio">
+    <meta property="og:description" content="Portfolio of Bishnu Hari Tripathi, Treasurer of the Nepal Basketball Association.">
+    <meta property="og:image" content="https://bishnuhari.com.np/profile.jpg"> <!-- Ensure URL is correct when deployed -->
+    <meta property="og:url" content="https://bishnuhari.com.np">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bishnu Hari Tripathi - Portfolio">
+    <meta name="twitter:description" content="Portfolio of Bishnu Hari Tripathi, Treasurer of the Nepal Basketball Association.">
+    <meta name="twitter:image" content="https://bishnuhari.com.np/profile.jpg">
+
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,19 +29,133 @@
     <div class="background-orbs">
         <div class="orb orb-1"></div>
         <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
     </div>
-    <div class="container">
-        <div class="glass-card">
-            <div class="profile-image-container">
+    
+    <!-- Top Navigation Bar -->
+    <nav class="navbar glass-card">
+        <div class="nav-brand">
+            <img src="profile.jpg" alt="Bishnu Hari Tripathi" class="nav-profile-img">
+            <span class="nav-name">Bishnu Hari</span>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="nav-links" id="nav-links">
+            <a href="#hero" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#thoughts" class="nav-link">My Thoughts</a>
+            <a href="#gallery" class="nav-link">Gallery</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <div class="overlay" id="overlay"></div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="hero" class="section hero-section">
+            <div class="profile-image-container hero-profile">
                 <img src="profile.jpg" alt="Bishnu Hari Tripathi" class="profile-image">
             </div>
             <h1 class="name">Bishnu Hari Tripathi</h1>
-            <p class="status">Coming Soon</p>
-            <div class="loader">
-                <span></span><span></span><span></span>
+            <p class="status">Sports Administrator & Leader</p>
+        </section>
+
+        <!-- Detailed Role / About Section -->
+        <section id="about" class="section glass-card role-section">
+            <h2 class="section-title">About Me</h2>
+            <div class="role-content">
+                <h3 class="role-title">Treasurer of the Nepal Basketball Association</h3>
+                <p class="role-description">
+                    Dedicated to the development and promotion of basketball across Nepal. Through strategic planning, financial management, and community engagement, I work towards creating better opportunities for athletes, coaches, and sports enthusiasts nationwide.
+                </p>
             </div>
-        </div>
-    </div>
+        </section>
+
+        <!-- My Thoughts (Videos) Section -->
+        <section id="thoughts" class="section">
+            <h2 class="section-title">My Thoughts</h2>
+            <div class="media-grid">
+                <!-- YouTube Videos -->
+                <div class="media-card glass-card">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/J9GGVGd7RK0?si=x1vfnSdh9crlzAr2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="media-card glass-card">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/2Z4oN5v-8L8?si=2BKwF3rx0ELfiOFI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery (Images) Section -->
+        <section id="gallery" class="section">
+            <h2 class="section-title">Gallery</h2>
+            <div class="media-grid">
+                <!-- Images -->
+                <div class="media-card glass-card">
+                    <img src="images/WhatsApp%20Image%202026-07-07%20at%2011.08.08.jpeg" alt="Gallery Image 1" class="gallery-image">
+                </div>
+                <div class="media-card glass-card">
+                    <img src="images/WhatsApp%20Image%202026-07-10%20at%2015.15.37.jpeg" alt="Gallery Image 2" class="gallery-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section glass-card contact-section">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info-block">
+                    <h3>Contact Information</h3>
+                    <p>Feel free to reach out for collaborations or inquiries.</p>
+                    <a href="mailto:voiceofnepal60@gmail.com" class="contact-link"><i class="icon">✉</i> voiceofnepal60@gmail.com</a>
+                    <a href="tel:+9779851202625" class="contact-link"><i class="icon">📞</i> +977 9851202625</a>
+                </div>
+                <div class="contact-form-block">
+                    <form class="contact-form" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" class="form-control" required placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-control" required placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" class="form-control" rows="4" required placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+        const overlay = document.getElementById('overlay');
+        const navItems = document.querySelectorAll('.nav-link');
+
+        function toggleMenu() {
+            navLinks.classList.toggle('active');
+            overlay.classList.toggle('active');
+            document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
+        }
+
+        hamburger.addEventListener('click', toggleMenu);
+        overlay.addEventListener('click', toggleMenu);
+        navItems.forEach(item => item.addEventListener('click', () => {
+            if (navLinks.classList.contains('active')) toggleMenu();
+        }));
+    </script>
 </body>
 
 </html>
